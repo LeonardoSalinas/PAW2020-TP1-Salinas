@@ -40,23 +40,23 @@ El atributo `controls` agrega controles para la reproducción del audio, tales c
 
 Mediante el uso del tag `<source>` se puede especificar diferentes formatos del mismo audio, logrando así que el browser pueda elegir entre varias alternativas. El primer formato reconocido será el seleccionado. Si se incluye texto entre los tags `<audio>` y `</audio>`, éste sólo será visible en caso de que el browser no soporte los elementos `<audio>`
 
-`<audio controls>
-
+```
+<audio controls>
 	<source src=”path/audio.mp3” type=”audio/mpeg”>
-	
 	<source src=”path/audio.ogg” type=”audio/ogg”>
-	
 	Tu navegador no soporta los elementos de audio.
-	
-</audio>`
+</audio>
+```
 
 `<video>` es un tag html5 que permite embeber archivos de video en una página html. Al igual que con los archivos de audio, el atributo “controls” permite agregar controles para el manejo del video y el tag `<source>` permite agregar distintos formatos para que el browser elija. Es recomendable además incluir siempre los atributos `width` y `height`. Caso contrario la página puede parpadear mientras el video se carga.
 
-`<video width=”320” height=”240” controls>
+```
+<video width=”320” height=”240” controls>
 	<source src=”path/video.mp4” type=”video/mp4”>
 	<source src=”path/video.ogg” type=”video/ogg”>
 	Tu navegador no soporta los elementos de video.
-</audio>`
+</audio>
+```
 
 
 
