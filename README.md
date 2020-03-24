@@ -52,7 +52,7 @@ Mediante el uso del tag `<source>` se puede especificar diferentes formatos del 
 `<video>` es un tag html5 que permite embeber archivos de video en una página html. Al igual que con los archivos de audio, el atributo “controls” permite agregar controles para el manejo del video y el tag `<source>` permite agregar distintos formatos para que el browser elija. Es recomendable además incluir siempre los atributos `width` y `height`. Caso contrario la página puede parpadear mientras el video se carga.
 
 ```
-<video width=”320” height=”240” controls>
+<video width=”320” height=”240” controls>[html]
 	<source src=”path/video.mp4” type=”video/mp4”>
 	<source src=”path/video.ogg” type=”video/ogg”>
 	Tu navegador no soporta los elementos de video.
