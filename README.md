@@ -17,7 +17,7 @@ Un lenguaje de marcado es una forma de cofificar un documento que, junto con el 
 El leguaje HTML se utiliza para crear documentos que muestren una estructura de hipertexto. Estos documentos se conforman como documentos de texto plano en los que todo el formato del texto se especifica mediante marcas de texto (tags), los cuales delimitan los contenidos a los que afecta. Dependiendo del contenido de estos tags, los navegadores representarán el texto con un formato determinado.
 El conjunto mínimo de tags que debe tener un docomento elaborado en este lenguajes es:
 
-<!DOCTYPE html> - indica que el documento está en formato HTML.
+'''<!DOCTYPE html>''' - indica que el documento está en formato HTML.
 <html lang="es"> - indica el lenguaje utilizado.  En este caso español. Aunque no es una línea obligatoria.
 <body> </body> - Entre estas etiquetas se define el cuerpo del documento.
 
