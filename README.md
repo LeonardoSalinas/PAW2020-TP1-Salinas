@@ -21,7 +21,7 @@ El conjunto mínimo de tags que debe tener un docomento elaborado en este lengua
 
 `<html lang="es">` - indica el lenguaje utilizado.  En este caso español. Aunque no es una línea obligatoria.
 
-`<body> </body>` - Entre estas etiquetas se define el cuerpo del documento.
+\<body> \</body> - Entre estas etiquetas se define el cuerpo del documento.
 
 
 
