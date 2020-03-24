@@ -1,5 +1,5 @@
 # PAW2020-TP1-Salinas
- Entrega del trabajo práctico 1 para Programación Web de Luján.
+# Entrega del trabajo práctico 1 para Programación Web de Luján.
 
 Las consignas de los ejercicios prácticos se encuentran dentro del archivo HTML correspondiente a la resolución.
 
@@ -41,7 +41,7 @@ El atributo `controls` agrega controles para la reproducción del audio, tales c
 
 Mediante el uso del tag `<source>` se puede especificar diferentes formatos del mismo audio, logrando así que el browser pueda elegir entre varias alternativas. El primer formato reconocido será el seleccionado. Si se incluye texto entre los tags `<audio>` y `</audio>`, éste sólo será visible en caso de que el browser no soporte los elementos `<audio>`
 
-```
+```[html]
 <audio controls>
 	<source src=”path/audio.mp3” type=”audio/mpeg”>
 	<source src=”path/audio.ogg” type=”audio/ogg”>
