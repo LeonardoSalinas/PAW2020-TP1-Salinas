@@ -18,9 +18,7 @@ El leguaje HTML se utiliza para crear documentos que muestren una estructura de 
 El conjunto mínimo de tags que debe tener un docomento elaborado en este lenguajes es:
 
 `<!DOCTYPE html>` - indica que el documento está en formato HTML.
-
 `<html lang="es">` - indica el lenguaje utilizado.  En este caso español. Aunque no es una línea obligatoria.
-
 `<body> </body>` - Entre estas etiquetas se define el cuerpo del documento.
 
 
