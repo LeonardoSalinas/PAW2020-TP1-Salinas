@@ -88,6 +88,7 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 		</section>
 
 		<section>
+			<!-- falta la estructura de formulario y el label -->
 			<input type="text" placeholder="Buscar..." name="search">
 			<input type="submit" value="Buscar">
 		</section>
@@ -95,6 +96,7 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 
 	
 	<section>
+		<!-- No sería un titulo? -->
 		Eventos
 		<ul>
 			<li><a href="#">Medios habilitados para el pago...</a></li>
@@ -114,8 +116,10 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 		<ul>
 			<li>
 				<article>
+					<!-- Falta semantica dentro del articulo -->
 					<p><a href="#">Recomendaciones ante la emergencia...</a></p>
 					<p>Ante la declaración de le Emergencia...</p>
+					<!-- Es una imagen suelta o es una figura y su caption? -->
 					<img src="#" alt="Imagen de la noticia">
 				</article>
 			</li>
@@ -155,7 +159,9 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 		<h2>Últimas Noticias</h2>
 		<article>
 			<a href="#"><img src="#" alt="Imagen de la noticia"></a>
+			<!-- la fecha no se tiene un tag mas representativo? -->
 			<p>23 marzo, 2020</p>
+			<!-- Esto no seria un titulo? -->
 			<a href="#"><p>Coronavirus: Se confirmó como negativo...</p></a>
 			<p>La Secretaría de Salud informa que se confirmó...</p>
 		</article>
@@ -200,6 +206,7 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 	<!–– Sección de eventos -->
 	<section>
 		<h2>Próximos Eventos</h2>
+		<!-- Por qué articulos y no un listado de cosas? No significa que esté mal, pero quizá es un listado de articulos-->
 		<article>
 			<a href="#"><img src="#" alt="Imagen del evento"></a>
 		</article>
@@ -233,7 +240,7 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 		</article>
 	</section>
 
-
+	<!-- Por qué es un aside? Porque aparece al costado?-->
 	<aside>
 		<article>
 			<a href="#">
@@ -344,6 +351,7 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 		</ul>
 		<p>°C tiempo en luján</p>
 		<p>23 marzo, lunes</p>
+		<!-- esta lista no es una barra de navegación? -->
 		<ul>
 			<li><a href="#">Portada</a></li>
 			<li><a href="#">Luján</a></li>
@@ -352,7 +360,10 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 			<li><a href="#">Servicios</a></li>
 			<li><a href="#">Contacto</a></li>
 		</ul>
+		
+		<!-- Esta funcionalidad no se debe representar con HTML, es una funcionalidad y no es parte del contenido. Esto se agregará despues con JS -->
 		<button>^</button>
+		<!-- No hay algun tad que represente semanticamente mejor estos datos que un <p> -->
 		<p>Municipalidad de Luján - Todos los derechos reservados - 2017</p>
 	</footer>
 
