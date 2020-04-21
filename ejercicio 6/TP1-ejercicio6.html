@@ -87,17 +87,18 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 			</ul>
 		</section>
 
-		<section>
-			<!-- falta la estructura de formulario y el label -->
-			<input type="text" placeholder="Buscar..." name="search">
+		<!-- (Resuelto) falta la estructura de formulario y el label -->
+		<form action="#">
+			<label for="searchId">¤</label>
+			<input type="text" placeholder="Buscar..." name="search" id="searchId">
 			<input type="submit" value="Buscar">
-		</section>
+		</form>
 	</nav>
 
 	
 	<section>
-		<!-- No sería un titulo? -->
-		Eventos
+		<!-- (Resuelto)No sería un titulo? -->
+		<h2>Eventos</h2>
 		<ul>
 			<li><a href="#">Medios habilitados para el pago...</a></li>
 			<li><a href="#">Coronavirus:...</a></li>
@@ -116,32 +117,42 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 		<ul>
 			<li>
 				<article>
-					<!-- Falta semantica dentro del articulo -->
-					<p><a href="#">Recomendaciones ante la emergencia...</a></p>
-					<p>Ante la declaración de le Emergencia...</p>
-					<!-- Es una imagen suelta o es una figura y su caption? -->
-					<img src="#" alt="Imagen de la noticia">
+					<!-- (Resuelto)Falta semantica dentro del articulo -->
+					<h2><a href="#">Recomendaciones ante la emergencia...</a></h2>
+					<!-- (Resuelto)Es una imagen suelta o es una figura y su caption? -->
+					<figure>
+						<img src="#" alt="Imagen de la noticia">
+						<figcaption>Ante la declaración de le Emergencia...</figcaption>
+					</figure>	
 				</article>
 			</li>
+
 			<li>
 				<article>
-					<p><a href="#">El intendente declaró la emergencia...</a></p>
-					<p>El intendente Municipal, Leonardo Boto, declaró...</p>
-					<img src="#" alt="Imagen de la noticia">
+					<h2><a href="#">El intendeten declaró la emergencia...</a></h2>
+					<figure>
+						<img src="#" alt="Imagen de la noticia">
+						<figcaption>El intendente Municipal, Leonardo Boto, declaró...</figcaption>
+					</figure>	
 				</article>
 			</li>
+
 			<li>
 				<article>
-					<p><a href="#">Coronavirus: Reunión ampliada...</a></p>
-					<p>Este mediodía, en el Museo...</p>
-					<img src="#" alt="Imagen de la noticia">
-				</article>
+					<h2><a href="#">Coronavirus: Reunión ampliada...</a></h2>
+					<figure>
+						<img src="#" alt="Imagen de la noticia">
+						<figcaption>Este mediodía, en el Museo...</figcaption>
+					</figure>	
+				</article>				
 			</li>
+
 			<li>...</li>
+
 		</ul>
 	</section>
 
-	<!–– Slide bar entre las noticias -->
+	<!-- Slide bar entre las noticias -->
 	<section>
 		<ul>
 			<li><a href="#">Turnos de licencias de conducir</a></li>
@@ -154,51 +165,53 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 	</section>
 
 
-	<!–– Sección de noticias -->
+	<!-- Sección de noticias -->
 	<section>
 		<h2>Últimas Noticias</h2>
 		<article>
 			<a href="#"><img src="#" alt="Imagen de la noticia"></a>
-			<!-- la fecha no se tiene un tag mas representativo? -->
-			<p>23 marzo, 2020</p>
-			<!-- Esto no seria un titulo? -->
-			<a href="#"><p>Coronavirus: Se confirmó como negativo...</p></a>
+			<!-- (Resuelto)la fecha no se tiene un tag mas representativo? -->
+			<!-- El texto dentro del tag <time> es para que se muestre temporalmente -->
+			<!-- Mediante JS se debe poner ese valor en ese sitio -->
+			<time datetime="2020-23-03">23 marzo, 2020</time>
+			<!-- (Resuelto)Esto no seria un titulo? -->
+			<a href="#"><h2>Coronavirus: Se confirmó como negativo...</h2></a>
 			<p>La Secretaría de Salud informa que se confirmó...</p>
 		</article>
 
 		<article>
 			<a href="#"><img src="#" alt="Imagen de la noticia"></a>
-			<p>23 marzo, 2020</p>
-			<a href="#"><p>Medios habilitados para el pago...</p></a>
+			<time datetime="2020-23-03">23 marzo, 2020</time>
+			<a href="#"><h2>Medios Habilitados para el pago...</h2></a>
 			<p>En el marco de las medidas de aislamiento...</p>
 		</article>
 
 		<article>
 			<a href="#"><img src="#" alt="Imagen de la noticia"></a>
-			<p>22 marzo, 2020</p>
-			<a href="#"><p>Informe N°. 6: Coronavirus/...</p></a>
+			<time datetime="2020-23-03">23 marzo, 2020</time>
+			<a href="#"><h2>Informe N°. 6: Coronavirus...</h2></a>
 			<p>Casos en PBA y Nación 22 de marzo...</p>
 		</article>
 
 		<article>
 			<a href="#"><img src="#" alt="Imagen de la noticia"></a>
-			<p>22 marzo, 2020</p>
-			<a href="#"><p>Cultura y turismo articula medidas...</p></a>
+			<time datetime="2020-23-03">23 marzo, 2020</time>
+			<a href="#"><h2>Cultura y turismo articula medidas...</h2></a>
 			<p>Esta semana, el Ministro de Cultura de la Nación...</p>
 		</article>
 
 		<article>
 			<a href="#"><img src="#" alt="Imagen de la noticia"></a>
-			<p>22 marzo, 2020</p>
-			<a href="#"><p>"Comprá cerca de casa": listado de...</p></a>
+			<time datetime="2020-23-03">23 marzo, 2020</time>
+			<a href="#"><h2>"Comprá cerca de casa": listado de...</h2></a>
 			<p>El Municipio de Luján elaboró una campaña...</p>
 		</article>
 
 		<article>
 			<a href="#"><img src="#" alt="Imagen de la noticia"></a>
-			<p>21 marzo, 2020</p>
-			<a href="#"><p>Coronavirus en todos lados...</p></a>
-			<p>Parece ser que ya nada ocurre en el mundo, salvo por el coronavirus...</p>
+			<time datetime="2020-23-03">23 marzo, 2020</time>
+			<a href="#"><h2>Informe N°. 5: Coronavirus...</h2></a>
+			<p>Casos en PBA y Nación 21 de marzo...</p>
 		</article>
 	</section>
 
@@ -206,18 +219,28 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 	<!–– Sección de eventos -->
 	<section>
 		<h2>Próximos Eventos</h2>
-		<!-- Por qué articulos y no un listado de cosas? No significa que esté mal, pero quizá es un listado de articulos-->
-		<article>
-			<a href="#"><img src="#" alt="Imagen del evento"></a>
-		</article>
+		<!-- (Resuelto en el comentario de abajo)Por qué articulos y no un listado de cosas? No significa que esté mal, pero quizá es un listado de articulos-->
 
-		<article>
-			<a href="#"><img src="#" alt="Imagen del evento"></a>
-		</article>
+		<!-- Podría ser un listado de cosas. Pero pensé que a lo mejor en otro momento pueden venir datos adicionales, y ya no sería una lista de cosas (ej: imgs dentro de un anchor y un caption con su título). Aunque sí podría ser un listado de articles. No lo había pensado así y eso me parece que tiene más sentido dado que cada imágen representa un evento. Podría decir entonces que cada imagen en realidad es un artículo. Lo voy a modificar para que refleje eso. -->
+		<ul>
+			<li>
+				<article>
+					<a href="#"><img src="#" alt="Imagen del evento"></a>
+				</article>
+			</li>
 
-		<article>
-			<a href="#"><img src="#" alt="Imagen del evento"></a>
-		</article>
+			<li>
+				<article>
+					<a href="#"><img src="#" alt="Imagen del evento"></a>
+				</article>
+			</li>
+
+			<li>
+				<article>
+					<a href="#"><img src="#" alt="Imagen del evento"></a>
+				</article>
+			</li>
+		</ul>
 	</section>
 
 
@@ -240,8 +263,8 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 		</article>
 	</section>
 
-	<!-- Por qué es un aside? Porque aparece al costado?-->
-	<aside>
+	<!-- (Resuelto)Por qué es un aside? Porque aparece al costado?-->
+	<section>
 		<article>
 			<a href="#">
 				<img src="#" alt="Imagen de la noticia del aside">
@@ -297,7 +320,7 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 				<p>HCD Honorable Concejo Deliberante</p>
 			</a>
 		</article>
-	</aside>
+	</section>
 
 
 	<!–– Sección de noticias #2 -->
@@ -351,20 +374,25 @@ a fin de poder corregir contrastando con lo que muestra el sitio ese día ya que
 		</ul>
 		<p>°C tiempo en luján</p>
 		<p>23 marzo, lunes</p>
-		<!-- esta lista no es una barra de navegación? -->
-		<ul>
-			<li><a href="#">Portada</a></li>
-			<li><a href="#">Luján</a></li>
-			<li><a href="#">Municipalidad</a></li>
-			<li><a href="#">Áreas de Gobierno</a></li>
-			<li><a href="#">Servicios</a></li>
-			<li><a href="#">Contacto</a></li>
-		</ul>
+		<!-- (Resuelto y dejo un comentario debajo)esta lista no es una barra de navegación? -->
+
+		<!-- Pensé que no era semánticamente correcto que haya dos <nav> dentro de un mismo documento HTML. En mi mente era un tag único, como el <head> o el <footer>. Pero averigüé después de ésta corrección que me haces me di cuenta que es perfectamente posible que haya dos o más <nav> en un mismo documento HTML -->
+		<nav>
+			<ul>
+				<li><a href="#">Portada</a></li>
+				<li><a href="#">Luján</a></li>
+				<li><a href="#">Municipalidad</a></li>
+				<li><a href="#">Áreas de Gobierno</a></li>
+				<li><a href="#">Servicios</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
 		
-		<!-- Esta funcionalidad no se debe representar con HTML, es una funcionalidad y no es parte del contenido. Esto se agregará despues con JS -->
-		<button>^</button>
-		<!-- No hay algun tad que represente semanticamente mejor estos datos que un <p> -->
-		<p>Municipalidad de Luján - Todos los derechos reservados - 2017</p>
+		<!-- (Resuelto)Esta funcionalidad no se debe representar con HTML, es una funcionalidad y no es parte del contenido. Esto se agregará despues con JS -->
+		<!-- <button>^</button> -->
+
+		<!-- (Resuelto)No hay algun tad que represente semanticamente mejor estos datos que un <p> -->
+		<summary>Municipalidad de Luján - Todos los derechos reservados - 2017</summary>
 	</footer>
 
 </body>
